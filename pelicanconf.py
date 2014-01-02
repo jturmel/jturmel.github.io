@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Joshua Turmel'
-SITENAME = u'Turmel'
+AUTHOR = u'Josh Turmel'
+SITENAME = u'Josh Turmel'
 SITEURL = ''
 
 TIMEZONE = 'American/Chicago'
@@ -16,18 +16,19 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('Bible.com', 'https://bible.com/'),)
+#LINKS = (('Bible.com', 'https://bible.com/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+#SOCIAL = (('You can add links in your config file', '#'),
+          #('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
+DEFAULT_DATE_FORMAT = '%B %d, %Y'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'themes/simple-bootstrap'
+THEME = 'custom-themes/subtle'
 OUTPUT_PATH = 'output'
 PATH = 'content'
 
