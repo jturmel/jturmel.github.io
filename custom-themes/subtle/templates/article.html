@@ -2,18 +2,18 @@
 {% block title %}{{ article.title|striptags }}{% endblock %}
 {% block content %}
 <section id="content" class="body">
-  <article>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="entry-title">
         <a href="/{{ article.url }}" rel="bookmark"
-           title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a></h1>
+           title="Permalink to {{ article.title|striptags }}" itemprop="name">{{ article.title}}</a></h1>
       {% include 'twitter.html' %}
       <abbr class="published" title="{{ article.date.isoformat() }}">
         {{ article.locale_date }}
       </abbr>
     </header>
 
-    <div class="entry-content">
+    <div class="entry-content" itemprop="description">
       {{ article.content }}
     </div><!-- /.entry-content -->
     {% if DISQUS_SITENAME %}
