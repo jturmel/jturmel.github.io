@@ -20,11 +20,16 @@
 body {
     background: url("wavecut.png");
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 14px ;
+    font-size: 18px ;
     line-height: 1.429;
     margin: 0;
     padding: 0;
     text-align: left;
+}
+
+.paginator {
+    font-size: 14px;
+    text-align: right;
 }
 
 /* Headings */
@@ -67,7 +72,7 @@ h1 a:hover {
 }
 	
 /* Paragraphs */
-p {margin-bottom: 1.143em;}
+p {margin-bottom: 1em;}
 
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
@@ -106,8 +111,9 @@ pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: 
 
 /* Quotes */
 blockquote {
-    margin: 20px;
-    font-style: italic;
+    margin: 20px 20px 20px 0px;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
 }
 cite {}
 
@@ -145,7 +151,11 @@ aside, nav, article, figure {
 }
 
 article header {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+}
+
+header abbr {
+    font-size: 14px;
 }
 
 /***** Layout *****/
@@ -162,7 +172,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 	/* Banner */
-	#banner h1 {font-size: 3.571em; line-height: 0;}
+	#banner h1 {font-size: 2.571em; line-height: 0;}
 	#banner h1 a:link, #banner h1 a:visited {
 		color: #000305;
 		display: block;
@@ -185,7 +195,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		font-size: 1.143em;
 		height: 40px;
 		line-height: 30px;
-		margin: 0 auto 2em auto;
+		margin: 0 auto 1em auto;
 		padding: 0;
 		text-align: center;
 		width: 800px;
@@ -373,9 +383,11 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
-.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title {font-size: 2em; margin-bottom: 5px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
+
+h1.entry-title {margin-bottom: 20px;}
 
 .hentry .post-info * {font-style: normal;}
 
