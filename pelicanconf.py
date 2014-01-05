@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Josh Turmel'
 SITENAME = u'Josh Turmel'
-SITEURL = ''
+SITEURL = 'http://www.josht.com/'
 
 TIMEZONE = 'American/Chicago'
 
@@ -32,5 +32,5 @@ THEME = 'custom-themes/subtle'
 OUTPUT_PATH = 'output'
 PATH = 'content'
 
-ARTICLE_URL = '/{slug}'
+ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = '{slug}/index.html'
